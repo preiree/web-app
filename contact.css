@@ -1,0 +1,170 @@
+body {
+  background-color: #FAF7F0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+  padding:0;
+  max-height: 400px;
+}
+
+.intro-text img {
+  float: left;
+  max-height: 75px;
+  margin-top: -0.5em;
+  margin-left: 50px;
+}
+
+.intro-text {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 50px;
+}
+
+.intro-text h2 {
+  font-family: Heebo;
+  font-size: 95px;
+  color: #272727;
+  letter-spacing: -2px;
+  text-align: center;
+  display: block;
+  line-height: 98%;
+  margin-top: 30px;
+}
+
+.intro-text h3 {
+  font-family: Roboto;
+  font-size: 20px;
+  color: #170055;
+  letter-spacing: 0px;
+  text-align: center;
+  display: block;
+  line-height: 98%;
+  margin-top: 150px;
+}
+
+.intro-text h4 {
+  font-family: Heebo;
+  font-size: 15px;
+  color: #272727;
+  letter-spacing: 0px;
+  text-align: left;
+  display: block;
+  line-height: 99%;
+  margin-top: 20px;
+  margin-left: 12px;
+  float: left;
+}
+
+.intro-text h5 {
+  font-family: Roboto;
+  font-size: 15px;
+  color: #393E46;
+  letter-spacing: 0px;
+  text-align: center;
+  display: block;
+  line-height: 98%;
+  margin-top: -2em;
+}
+
+
+.cta {
+  border: none;
+  background: none;
+  color: #F7F5F2;
+  margin-top: 27px;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-family: Roboto;
+  color: #001F52;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #F7F5F2;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F7F5F2;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.card h2 {
+  font-family: Martel Sans;
+  font-size: 24px;
+  color: #222831;
+}
+
+.card h3 {
+  font-family: Heebo;
+  font-size: 16px;
+  color: #002B5B;
+  margin-top: -1.5em;
+  margin-bottom: 20px;
+}
+
+.card {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 100px;
+  cursor: text;
+  width: 670px;
+  height: 324px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 255, .2);
+  transition: all .2s;
+  box-shadow: 12px 12px 2px 1px rgba(10, 20, 255, .2);
+}
+
+.card:hover {
+  box-shadow: -12px 12px 2px -1px rgba(10, 20, 255, .2);
+}
+
+.footer-txt p {
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+  color: #495464;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
